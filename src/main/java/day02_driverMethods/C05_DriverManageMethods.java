@@ -13,9 +13,9 @@ public class C05_DriverManageMethods {
 
         WebDriver driver= new ChromeDriver();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // test'ler icin en cok 15 sn beklesin komutu
         driver.manage().window().maximize();
-        // yukaridaki bu iki konutlar genellikle mutlaka yapilir
+        // yukaridaki bu iki komut genellikle mutlaka yapilir
 
         /*
         waits konusu ileride daha genis anlatilacaktir...
