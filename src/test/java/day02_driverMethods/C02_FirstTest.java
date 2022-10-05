@@ -3,12 +3,12 @@ package day02_driverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C02_IlkTest {
+public class C02_FirstTest {
 
     /*
-    Gerekli ayarlamalari yapip amazon sayfasina gidiniz
-    1- Sayfa basligi "amazon" kelimesi icermeli
-    2- Sayfa url'inde "Amazon" kelimesi olmali
+    After making the necessary adjustments,  go to the amazon page
+     1- The page title should contain the word "amazon"
+     2- The page url must have the word "Amazon"
      */
 
     public static void main(String[] args) {
@@ -24,15 +24,15 @@ public class C02_IlkTest {
         String actualUrl= driver.getCurrentUrl();
         String actualTitle= driver.getTitle();
 
-        // hadi simdi test edelim...
-        // once url testi...
+        // let's start testing
+        // first url test...
 
         if (actualUrl.contains(expectedUrlContent)){
             System.out.println("Url test PASSED");
         } else {
             System.out.println("Url test FAILED");
             System.out.println("Actual Url : " + actualUrl);
-            System.out.println("Actual Url aranan " + expectedUrlContent + " kelimesini icermiyor");
+            System.out.println("Actual Url doesn't contain " + expectedUrlContent + " word");
         }
 
         // title test
@@ -42,14 +42,14 @@ public class C02_IlkTest {
         } else {
             System.out.println("Title test FAILED");
             System.out.println("Actual Title : " + actualTitle);
-            System.out.println("Actual Title aranan " + expectedTitleContent + " kelimesini icermiyor");
+            System.out.println("Actual Title doesn't contain " + expectedTitleContent + " word");
         }
 
         driver.quit();
 
         /*
-        driver.close() ==> sadece acik olan browser'i kapatir
-        driver.quit() ==> ise test calisirken acilan tum browser'lari kapatir
+        driver.close() ==> close only the open browser sadece acik olan browser'i kapatir
+        driver.quit() ==> close the all browsers that testing is working on
          */
     }
 }
