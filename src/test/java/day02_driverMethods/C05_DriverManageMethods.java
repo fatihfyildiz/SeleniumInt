@@ -13,14 +13,14 @@ public class C05_DriverManageMethods {
 
         WebDriver driver= new ChromeDriver();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // test'ler icin en cok 15 sn beklesin komutu
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // wait atmost 15 seconds for the testing
         driver.manage().window().maximize();
-        // yukaridaki bu iki komut genellikle mutlaka yapilir
+        // above two are done in general
 
         /*
-        waits konusu ileride daha genis anlatilacaktir...
-        implicitly wait ==> driver'in aradigi elementleri bulabilmesi icin kendisine verdigimiz arastirma suresidir
-        eger o sure icerisinde aradigi elementi bulamazsa hata verir
+        waits issue will be explained later but,
+        implicitly wait ==> is the time that we want driver to find out the elements that we give
+        if it cannot find in that time, then it will give error
          */
 
         driver.manage().window().fullscreen();
@@ -45,7 +45,7 @@ public class C05_DriverManageMethods {
 
         /*
         fullscreen position (0, 0)
-        fullscreen size (1536, 864) ==> ekran cozunurlugu
+        fullscreen size (1536, 864)
         maximize position (-8, -8)
         maximize size (1552, 840)
         minimize position (9, 9)
