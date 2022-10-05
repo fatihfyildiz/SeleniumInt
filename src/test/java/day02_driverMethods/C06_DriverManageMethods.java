@@ -15,7 +15,8 @@ public class C06_DriverManageMethods {
         WebDriver driver= new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.manage().window().maximize();
-        // yukaridaki bu 4'unun hep yapacagiz artik...
+        // We will almostly use the above four line...
+
 
         Thread.sleep(2000);
 
