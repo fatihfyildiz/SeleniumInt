@@ -10,25 +10,24 @@ public class C01_DriverMethods {
         System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
 
         WebDriver driver= new ChromeDriver();
-        // FFY: Kodlari boyle birakirsak, bos bir sayfa/sekme olusturur ama herhangi bir url'ye gitmez
-        // Hoca: driver objesi olusturunca Selenium WebDriver,
-        // bilgisayarimizda chrome browser'dan bir bos sayfa actirir...
+        // If we leave just on this stage, only a browser is opened but not go to an Url
+        // When a driver object is created, Selenium WebDriver make our PC/laptop to open an empty page in browser
 
         /*
-        Eger firefox veya edge ya da safari gibi baska browser kullanmak istersek
-        Selenium sitesinden o browser'in WebDriver'ini indirip projemize eklememiz gerekir
+        If we want to use firefox or other browser like edge or safari;
+        We need to download the WebDriver of that browser from the Selenium site and add it to our project.
          */
 
-        driver.get("https://www.amazon.com"); // Amazon web site acar
+        driver.get("https://www.amazon.com"); // opens the Amazon web site
 
-        // Eger kodlarimiz belli bir sure bekletmek istersek
-        Thread.sleep(5000); // yazilan milisaniye kadar kodlari bekletir...
+        // If we want to wait our testing for a while;
+        Thread.sleep(5000); // Testing will wait as the written duration
 
-        System.out.println("sayfa url'i : " + driver.getCurrentUrl());
+        System.out.println("page url is : " + driver.getCurrentUrl());
 
-        System.out.println("sayfanin title'i : " + driver.getTitle());
+        System.out.println("page title is : " + driver.getTitle());
 
-        driver.close(); // // Amazon web site acar ve acilma tamamlaninca hemen kapatir
+        driver.close(); // closing the browser
 
 
 
