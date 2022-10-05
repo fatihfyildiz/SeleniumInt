@@ -11,24 +11,24 @@ public class C03_DriverGetMethods {
         WebDriver driver= new ChromeDriver();
 
         System.out.println(driver.getWindowHandle());
-        // Bu method, bize acilan browser'in handle degerini dondurur
+        // This method brings us the handle value of the opened browser
         // CDwindow-CE76E6A83EA74A2D80ECB8018F289724
         // CDwindow-874C1196C8F3C65048D88B0936FAAA9C
         // CDwindow-C507A008AE1F911037D5BCBE3D27F570
-        // her seferinde farkli getiriyor...
-        // CDwindow-CB4CE9EDEF441A1D1FBEA3A2C4B534F3 ==> bu String deger
+        // Brought different values for the each trial
+        // CDwindow-CB4CE9EDEF441A1D1FBEA3A2C4B534F3 ==> this is the String value
 
         System.out.println(driver.getWindowHandles());
-        // [CDwindow-CB4CE9EDEF441A1D1FBEA3A2C4B534F3] ==> bu ise Set variable...
+        // [CDwindow-CB4CE9EDEF441A1D1FBEA3A2C4B534F3] ==> that is a Set variable...
         /*
-        Eger testimiz sirasinda birden fazla pencere acilirsa
-        acilan tum window'larin window handle degerlerini bir Set olarak dondurur/getirir
-        window'lar arasi gecisi bu handle degerleri ile yapariz...
+        If more than one window opens during our test,
+        Brings the window handle values of all opened windows as a Set
+        We make the transition between windows with these handle values...
          */
 
         driver.get("https://amazon.com");
         System.out.println(driver.getPageSource());
-        // web sayfasinin tum kaynak kodlarini getirir
+        // brings the all resource codes of the web page
 
         driver.close();
     }
