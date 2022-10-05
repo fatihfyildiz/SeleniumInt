@@ -20,7 +20,7 @@ public class Q2 {
   6 - Let's get the page title and address (url) of this web page
   7 - Let's check if the title and url contain the word "OTTO"
   8 - Then let's go to "https://wisequarter.com/"
-  9 - Let's take the title of this address and check if it contains the word "Quarter"
+  9 - Let's take the title and Url of this address and check if they contain the word "Quarter"
   10- Let's go back to our previous web page
   11- Let's refresh the page
   12- Then let's go back to our web page and close the current page that we are on
@@ -65,18 +65,17 @@ public class Q2 {
         driver.navigate().to("https://wisequarter.com/");
         Thread.sleep(2000);
 
-        String expectedTitleContent2 = "Quarter";
-        String actualTitle2 = driver.getTitle();
+        boolean isTrue = driver.getTitle().contains("Quarter");
 
-        // title test-2
+        // title and Url test for Wise Quarter
 
-        if (actualTitle2.contains(expectedTitleContent2)) {
-            System.out.println("Title test-2 PASSED");
-        } else {
-            System.out.println("Title test-2 FAILED");
-            System.out.println("Actual Title-2 : " + actualTitle2);
-            System.out.println("Actual Title-2 doesn't contain " + expectedTitleContent2 + " word");
-        }
+        if (isTrue)
+            System.out.println("WiseQuarter test PASSED");
+         else
+            System.out.println("WiseQuarter test FAILED");
+
+        String wqUrl = driver.getCurrentUrl();
+        System.out.println(wqUrl.contains("Quarter")? "Wise Quarter Url Test Passed" : "WQ Url Test Failed");
 
         driver.navigate().back();
         Thread.sleep(2000);
