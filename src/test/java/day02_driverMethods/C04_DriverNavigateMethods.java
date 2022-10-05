@@ -3,7 +3,7 @@ package day02_driverMethods;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C04_DriverNavigateMethodlari {
+public class C04_DriverNavigateMethods {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -16,11 +16,11 @@ public class C04_DriverNavigateMethodlari {
 
         Thread.sleep(2000);
 
-        // gerisin geriye amazon'a donelim...
+        // let's go back to amazon
         driver.navigate().back();
         Thread.sleep(2000);
 
-        // yeniden youtube'a gidelim
+        // let's go to youtube again
         driver.navigate().forward();
         Thread.sleep(2000);
 

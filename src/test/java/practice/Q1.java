@@ -28,9 +28,9 @@ public class Q1 {
         WebDriver driver= new ChromeDriver();
         driver.manage().window().maximize();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // Selenium kutuphanesinden geliyor
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // comes from Selenium library
 
-        Thread.sleep(2000); // Java kutuphanesinden geliyor...
+        Thread.sleep(2000); // comes from Java library
 
         driver.get("https://www.google.com/.");
         Thread.sleep(2000);
