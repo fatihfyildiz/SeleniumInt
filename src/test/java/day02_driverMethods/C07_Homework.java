@@ -38,7 +38,7 @@ public class C07_Homework {
         } else {
             System.out.println("Title test FAILED");
             System.out.println("Actual Title : " + actualTitle);
-            System.out.println("Actual Title aranan " + expectedTitleContent + " kelimesini icermiyor");
+            System.out.println("Actual Title doesn't contain " + expectedTitleContent + " word");
         }
 
         if (actualUrl.contains(expectedUrlContent)){
@@ -46,7 +46,7 @@ public class C07_Homework {
         } else {
             System.out.println("Url test FAILED");
             System.out.println("Actual Url : " + actualUrl);
-            System.out.println("Actual Url aranan " + expectedUrlContent + " kelimesini icermiyor");
+            System.out.println("Actual Url doesn't contain " + expectedUrlContent + " word");
         }
 
         Thread.sleep(2000);
@@ -61,7 +61,7 @@ public class C07_Homework {
         } else {
             System.out.println("Title test-2 FAILED");
             System.out.println("Actual Title-2 : " + actualTitle2);
-            System.out.println("Actual Title-2 aranan " + expectedTitleContent2 + " kelimesini icermiyor");
+            System.out.println("Actual Title-2 doesn't contain " + expectedTitleContent2 + " word");
         }
 
         Thread.sleep(2000);
