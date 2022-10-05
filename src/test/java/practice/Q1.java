@@ -3,6 +3,8 @@ package practice;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 public class Q1 {
 
     public static void main(String[] args) throws InterruptedException {
@@ -25,6 +27,10 @@ public class Q1 {
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver= new ChromeDriver();
         driver.manage().window().maximize();
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // Selenium kutuphanesinden geliyor
+
+        Thread.sleep(2000); // Java kutuphanesinden geliyor...
 
         driver.get("https://www.google.com/.");
         Thread.sleep(2000);

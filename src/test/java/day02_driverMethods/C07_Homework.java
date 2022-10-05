@@ -10,16 +10,17 @@ public class C07_Homework {
     public static void main(String[] args) throws InterruptedException {
 
         /*
-        1.Yeni bir class olusturalim (Homework)
-        2.ChromeDriver kullanarak, facebook sayfasina gidin ve sayfa basliginin (title) “facebook” oldugunu dogrulayin (verify),
-         degilse dogru basligi yazdirin.
-        3.Sayfa URL’inin “facebook” kelimesi icerdigini dogrulayin, icermiyorsa “actual” URL’i yazdirin.
-        4.https://www.walmart.com/ sayfasina gidin.
-        5. Sayfa basliginin “Walmart.com” icerdigini dogrulayin.
-        6. Tekrar “facebook” sayfasina donun
-        7. Sayfayi yenileyin
-        8. Sayfayi tam sayfa (maximize) yapin
-        9.Browser’i kapatin
+         1. Let's create a new class (Homework)
+         2. By using ChromeDriver, go to facebook page and verify the page title is “facebook” (verify),
+          if not, print the correct title.
+         3. Verify that the page URL contains the word "facebook", if not, print the "actual" URL.
+         4.Go to https://www.walmart.com/.
+         5. Verify that the page title includes “Walmart.com”.
+         6. Go back to the “facebook” page
+         7. Refresh the page
+         8. Maximize the page
+         9. Close the browser
+
          */
 
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");

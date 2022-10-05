@@ -15,7 +15,7 @@ public class C01_DriverMethods {
         // bilgisayarimizda chrome browser'dan bir bos sayfa actirir...
 
         /*
-        Eger firefo veya edge ya da safari gibi baska browser kullanmak istersek
+        Eger firefox veya edge ya da safari gibi baska browser kullanmak istersek
         Selenium sitesinden o browser'in WebDriver'ini indirip projemize eklememiz gerekir
          */
 
