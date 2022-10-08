@@ -43,6 +43,5 @@ public class C06_webElementMethods {
         searchBox.isSelected(); //
 
         driver.close();
-
     }
 }
