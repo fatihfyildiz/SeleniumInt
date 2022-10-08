@@ -3,7 +3,7 @@ package Homework_Others;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class C01_Homework1 {
+public class C01_Hw1 {
 
     public static void main(String[] args) throws InterruptedException {
 

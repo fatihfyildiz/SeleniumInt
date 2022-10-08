@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C02_Homework2 {
+public class C02_Hw2 {
 
     public static void main(String[] args) throws InterruptedException {
 
