@@ -39,6 +39,5 @@ public class Q3 {
         driver.findElement(By.name("firstname")).sendKeys("Nevzat");
 
 
-
     }
 }

@@ -1,11 +1,9 @@
-package day02_driverMethods;
+package Homework_Others;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.time.Duration;
-
-public class C07_Homework {
+public class C01_Homework1 {
 
     public static void main(String[] args) throws InterruptedException {
 
