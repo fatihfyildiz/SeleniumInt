@@ -12,6 +12,12 @@ import java.util.List;
 public class C04_LocatorTest {
 
     /*
+    2. Create the main method and complete the following tasks:
+        a. go to the website: https://www.amazon.com/
+        b. search "city bike"
+        c. print the related results on Amazon web page
+        d. click on the image of the first result
+
     2. Main method oluşturun ve aşağıdaki görevi tamamlayın.
         a.web sayfasına gidin. https://www.amazon.com/
         b. Search(ara) “city bike”
@@ -31,14 +37,16 @@ public class C04_LocatorTest {
         WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));
 
         searchBox.sendKeys("city bike" + Keys.ENTER);
-        // veya asagidaki gibi iki satirla da bu isi halledebiliriz
-        // searchBox.sendKeys("city bike")
-        // searchBox.submit();
+        /*
+        alternatively, this last (above) task can be also done by the following two:
+        searchBox.sendKeys("city bike")
+        searchBox.submit();
+         */
 
         List<WebElement> resultWebElementList= driver.findElements(By.className("sg-col-inner"));
 
         System.out.println(resultWebElementList.size()); // 122 ==> current size
-        // bu listenin 1nci elementi bulan snouc sayisi??
+        // if we want to find the first element of those results...
 
         System.out.println(resultWebElementList.get(0));
         // [[ChromeDriver: chrome on WINDOWS (f075161929cc556d94c25e669adcb707)] -> class name: sg-col-inner]
@@ -47,7 +55,7 @@ public class C04_LocatorTest {
         // 1-16 of 140 results for "city bike" ==> current text
 
         driver.findElement(By.className("s-image")).click();
-        // Eger bir locate ile birden fazla element bulunuyorsa, Selenium, ilk elementi kullanmaktadir
+        // if more than one element might be found by a locator, then Selenium will just use the first one
 
         Thread.sleep(5000);
 
