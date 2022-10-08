@@ -24,14 +24,20 @@ public class C05_noSuchElementExc {
         // to see NoSuchElementException
 
         /*
+        if there is a problem (mistyping or intentinally false writing as above) with the web element
+        which is located by findElement method, then the driver cannot turn the wanted web element and instead
+        turns NoSuchElementException as an error
+
         findElement ile locate edilen web element'lerde locator'da sorun (yukaridaki gibi yanlis yazim mesela) varsa
         driver istenen web element'i veremez ve error olarak NoSuchElementException verir
          */
 
         List<WebElement> resultSearchBox= driver.findElements(By.id("twotabsearchtextboxes"));
         System.out.println(resultSearchBox.size());
-        /* findelements ile bunu yaparsak error vermez bunun yerine bos bir liste dondurur
+        /*
+        if we try that with the findElements, an error will not occur but an empty list is to be turned
 
+        findElements ile bunu yaparsak error vermez bunun yerine bos bir liste dondurur
          */
 
         driver.close();
