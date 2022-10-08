@@ -10,7 +10,7 @@ import java.util.List;
 
 public class C03_linkTest {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver= new ChromeDriver();
@@ -19,9 +19,11 @@ public class C03_linkTest {
 
         driver.get("https://www.amazon.com");
 
-        WebElement customerServiceElement= (WebElement) driver.findElements(By.linkText("Customer Service"));
+        WebElement customerServiceElement= driver.findElement(By.linkText("Customer Service"));
 
         customerServiceElement.click();
+
+        Thread.sleep(3000);
 
         driver.close();
 
