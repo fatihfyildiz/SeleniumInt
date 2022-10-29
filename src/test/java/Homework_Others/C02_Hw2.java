@@ -86,7 +86,7 @@ public class C02_Hw2 {
 
         /*
         We can close the driver by two ways:
-        1- driver.close(); ==> just close the current window and if it is the only window, quit browser
+        1- driver.close(); ==> just close the current window and if it is the only window, quiting browser
         2- driver.quit(); ==>  close the all related windows and quit browser
         */
 

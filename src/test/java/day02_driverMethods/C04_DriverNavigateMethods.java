@@ -27,7 +27,5 @@ public class C04_DriverNavigateMethods {
         driver.navigate().refresh();
 
         driver.close();
-
-
     }
 }

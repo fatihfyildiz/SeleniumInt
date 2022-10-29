@@ -18,7 +18,6 @@ public class C01_Hw1 {
          7. Refresh the page
          8. Maximize the page
          9. Close the browser
-
          */
 
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");

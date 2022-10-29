@@ -21,16 +21,13 @@ public class C01_DriverMethods {
         driver.get("https://www.amazon.com"); // opens the Amazon web site
 
         // If we want to wait our testing for a while;
-        Thread.sleep(5000); // Testing will wait as the written duration
+        Thread.sleep(3000); // Testing will wait as the written duration
 
         System.out.println("page url is : " + driver.getCurrentUrl());
 
         System.out.println("page title is : " + driver.getTitle());
 
         driver.close(); // closing the browser
-
-
-
 
     }
 

@@ -31,6 +31,7 @@ public class C01_findElement {
         amazonSearchBox.sendKeys("Nutella" + Keys.ENTER);
 
         Thread.sleep(5000);
+
         driver.close();
 
         /*

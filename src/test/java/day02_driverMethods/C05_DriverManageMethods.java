@@ -13,7 +13,7 @@ public class C05_DriverManageMethods {
 
         WebDriver driver= new ChromeDriver();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // wait atmost 15 seconds for the testing
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // wait at most 15 seconds for the testing
         driver.manage().window().maximize();
         // above two are done in general
 
@@ -51,10 +51,6 @@ public class C05_DriverManageMethods {
         minimize position (9, 9)
         minimize size (1051, 806)
          */
-
-
-
-
 
     }
 }

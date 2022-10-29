@@ -48,7 +48,7 @@ public class C02_FirstTest {
         driver.quit();
 
         /*
-        driver.close() ==> close only the open browser sadece acik olan browser'i kapatir
+        driver.close() ==> close only the opened browser
         driver.quit() ==> close the all browsers that testing is working on
          */
     }

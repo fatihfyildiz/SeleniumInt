@@ -12,7 +12,7 @@ public class Q5 {
     public static void main(String[] args) throws InterruptedException {
 
         /*
-        Exercäse 5...
+        Exercise 5...
     Navigate to website https://testpages.herokuapp.com/styled/index.html
     Under the ORIGINAL CONTENTS
     click on Alerts
