@@ -20,11 +20,9 @@ public class C03_linkTest {
         driver.get("https://www.amazon.com");
 
         WebElement customerServiceElement= driver.findElement(By.linkText("Customer Service"));
-
         customerServiceElement.click();
 
         Thread.sleep(3000);
-
         driver.close();
 
     }

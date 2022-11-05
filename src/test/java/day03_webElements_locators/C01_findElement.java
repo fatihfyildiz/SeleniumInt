@@ -52,6 +52,7 @@ public class C01_findElement {
         2- className
             Class attribute'u genelde ayni islevi ypan web element'leri gruplandirmak icin kullanilir.
             Bu gruplandirmalar sayesinde CSS ile gruptaki tum web elementler tek yerden sekillendirilebilir
+
             Class attribute'u kullanilirken eger class degeri (value) space (bosluk) iceriyorsa,
             className ile yapilan locate'ler hata verebilir...
 
@@ -64,6 +65,7 @@ public class C01_findElement {
         2- className
             The class attribute is often used to group web elements that perform the same function.
             With the help of these groupings, all web elements in the group can be shaped from one place with CSS.
+
             When using the class attribute, if the class value (value) contains space,
             locates with className may give an error...
 
