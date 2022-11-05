@@ -19,16 +19,16 @@ public class C02_findElements {
 
         driver.get("https://www.amazon.com/");
 
-        List<WebElement> writingsElementList= driver.findElements(By.className("a-spacing-micro"));
-
-        System.out.println(writingsElementList);
+        List<WebElement> writingsList = driver.findElements(By.className("a-spacing-micro"));
+        System.out.println(writingsList);
         // [[[ChromeDriver: chrome on WINDOWS (84250d7049ed0566742686dff6d3d258)] -> class name: a-spacing-micro]]
         // those above hash Values will be different in each trial
 
-        System.out.println(writingsElementList.size());
+        System.out.println(writingsList.size());
 
-        for (WebElement eachElement: writingsElementList
+        for (WebElement eachElement: writingsList
              ) {
+
             System.out.println(eachElement.getSize());
         }
 
