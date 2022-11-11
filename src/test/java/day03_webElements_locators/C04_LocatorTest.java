@@ -19,7 +19,7 @@ public class C04_LocatorTest {
         d. click on the image of the first result
 
     2. Main method oluşturun ve aşağıdaki görevi tamamlayın.
-        a.web sayfasına gidin. https://www.amazon.com/
+        a. web sayfasına gidin. https://www.amazon.com/
         b. Search(ara) “city bike”
         c. Amazon’da görüntülenen ilgili sonuçların sayısını yazdırın
         d. Sonra karşınıza çıkan ilk sonucun resmine tıklayın.
@@ -46,8 +46,8 @@ public class C04_LocatorTest {
         List<WebElement> resultWebElementList= driver.findElements(By.className("sg-col-inner"));
 
         System.out.println(resultWebElementList.size()); // 122 ==> current size
-        // if we want to find the first element of those results...
 
+        // if we want to find the first element of those results...
         System.out.println(resultWebElementList.get(0));
         // [[ChromeDriver: chrome on WINDOWS (f075161929cc556d94c25e669adcb707)] -> class name: sg-col-inner]
 
@@ -58,7 +58,6 @@ public class C04_LocatorTest {
         // if more than one element might be found by a locator, then Selenium will just use the first one
 
         Thread.sleep(5000);
-
         driver.close();
 
     }
