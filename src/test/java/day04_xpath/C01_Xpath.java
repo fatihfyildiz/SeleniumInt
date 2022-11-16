@@ -27,7 +27,7 @@ public class C01_Xpath {
         3- attribute value(s)
 
         Xpath ve cssSelector bu 3 maddenin kombinasyonu ile olusur...
-        //tagismi[@attribute-ismi="attribute-value"]
+        //tagismi[@attributeName="attributeValue"]
           veya alt(child) attribute ile alt(child) attribute value de kullanilir daha detayli olmasi icin
 
         The 6 locators that we learnt until this point are depend on HTML codes
@@ -59,6 +59,7 @@ public class C01_Xpath {
 
         if (addremoveElement.isDisplayed()){
             System.out.println("Displaying test of Add/Remove Element is PASSED");
+
         } else {
             System.out.println("Add/Remove Element is not displayed, related test FAILED");
         }
