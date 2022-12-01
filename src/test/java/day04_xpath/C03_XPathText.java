@@ -25,7 +25,7 @@ public class C03_XPathText {
 
         //tagName[text()='.....']  ==> .... olan kisim text'in kendisi/degeri/yazisi
 
-        tagName oneml idegilse yerine * yazilabilir ==> //*[text()=‘Add Element’]
+        tagName onemli degilse yerine * yazilabilir ==> //*[text()=‘Add Element’]
          */
 
         System.setProperty("webdriver.chrome.driver","src/resources/chromedriver.exe");
@@ -45,6 +45,7 @@ public class C03_XPathText {
 
         if (deleteButton.isDisplayed()){
             System.out.println("Displaying test of Delete Button is PASSED");
+
         } else {
             System.out.println("Delete Button is not displayed, related test FAILED");
         }

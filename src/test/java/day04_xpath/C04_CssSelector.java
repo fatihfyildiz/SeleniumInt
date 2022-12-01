@@ -17,12 +17,13 @@ public class C04_CssSelector {
 
         Eger CssSelector olustururken id kullaniyorsaniz
 
-        Xpath: //tagname[@id='attribute-value']
+        Xpath: //tagname[@class='attribute-value']
         CssSelector: "#attribute-value"
 
-        Eger CssSelector olustururken id kullaniyorsaniz
+        Eger CssSelector olustururken class kullaniyorsaniz
 
-
+        Xpath: //tagname[@class='attribute-value']
+        CssSelector: ".attribute-value"
          */
 
 
