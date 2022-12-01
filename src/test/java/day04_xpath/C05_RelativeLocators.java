@@ -26,8 +26,8 @@ public class C05_RelativeLocators {
 
         // London'un sagi ve Berlin'in solu diye tarif edelim Boston web elementini
 
-        WebElement london= driver.findElement(By.id("pid5_thumb"));
-        WebElement berlin= driver.findElement(By.id("pid7_thumb"));
+        WebElement london= driver.findElement(By.id("pid5_price"));
+        WebElement berlin= driver.findElement(By.id("pid7_price"));
 
         WebElement boston1= driver.findElement(RelativeLocator
                                 .with(By.tagName("p"))
