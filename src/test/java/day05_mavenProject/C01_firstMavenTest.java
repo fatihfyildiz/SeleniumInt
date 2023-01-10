@@ -40,6 +40,7 @@ public class C01_firstMavenTest {
             );
             if (Integer.parseInt(sonucSayisiStr)>100){
                 System.out.println("sonuc sayisi 100'den fazla test PASSED");
+
             } else {
                 System.out.println("sonuc sayisi 100'den fazla degil, test FAILED");
             }
@@ -52,11 +53,14 @@ public class C01_firstMavenTest {
 
             //6- Sayfadaki tum basliklari yazdiralim
             driver.navigate().back();
+
             List<WebElement> baslikElemetleriList= driver.findElements(By.xpath("//span[@class='a-size-base a-color-base']"));
+
             for (WebElement eachelement: baslikElemetleriList
             ) {
                 System.out.println(eachelement.getText());
             }
+
             driver.close();
         }
 

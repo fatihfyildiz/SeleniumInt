@@ -43,7 +43,7 @@ public class C02_ZeroTest {
         WebElement amauntKutusu= driver.findElement(By.id("sp_amount"));
         amauntKutusu.sendKeys("200");
 
-        //8. tarih kismina “2022-10-10” yazdirin\
+        //8. tarih kismina “2022-10-10” yazdirin
         WebElement tarihKutusu= driver.findElement(By.id("sp_date"));
         tarihKutusu.sendKeys("2022-10-10");
 
