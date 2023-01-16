@@ -49,6 +49,7 @@ public class C04_LocatorTest {
 
         // if we want to find the first element of those results...
         System.out.println(resultWebElementList.get(0));
+
         // [[ChromeDriver: chrome on WINDOWS (f075161929cc556d94c25e669adcb707)] -> class name: sg-col-inner]
 
         System.out.println(resultWebElementList.get(0).getText());
